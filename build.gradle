@@ -18,3 +18,8 @@ dependencies {
 generateGrammarSource {
     arguments += ["-no-listener", "-package", "parrot"]
 }
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.0.1'
+}
